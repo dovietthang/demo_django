@@ -1,0 +1,5 @@
+pip install pillow (cài thư viện upload ảnh)
+
+python manage.py makemigrations products (tạo file create lệnh sql)
+python .\manage.py sqlmigrate products 0001 (xem lệnh sql)
+python .\manage.py migrate (tạo sql trên locahost)
