@@ -1,0 +1,28 @@
+Tạo 1 folder : mkdir TenFolder
+Xóa 1 folder : rmdir /s /q TenFolder
+Kiểm tra các folder : ls
+Khởi tạo folder này lam với kho chứa từ xa để các máy trạm kết nối vs khó chưa này đó là remote report : git init --bare
+check list : ls -la
+Lấy địa chỉ của remote : pwd
+
+Kết nối vs remote.
+b1 : git init.
+b2 : kiểm tra xem đã kết nối vs remote chưa : git remote.
+b3 : kết nối vs remote : git remote tên_remote add đia_chỉ_remote(root@10.0.212.21):/đường _dẫn_đến_thư_mục_remote. (thường đặt tên remote là origin)
+b4 : xem chi tiết đia chỉ của remote : git remote -v (có thể tạo nhiều tên remote).
+b5 : xóa một remote : git remote rm tên_remote.
+
+
+push file.
+git push -u origin(tên_remote) master(tên_master)  (-u để mặc định lần sau chỉ cần git push nó sẽ mặc định là nhánh master)
+git status (xem trạng thái)
+git log --oneline (kiểm tra các commit trên nhánh)
+git branch (check branch)
+git branch -a
+
+git add .
+git commit -m "tên commit"
+git log --oneline (kiểm tra các commit trên nhánh)
+git push origin tên_branch  
+git push --delete origin tên_branch  (xóa 1 branch)
+git push --all
