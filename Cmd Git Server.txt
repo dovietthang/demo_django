@@ -6,7 +6,7 @@ check list : ls -la
 Lấy địa chỉ của remote : pwd
 
 Kết nối vs remote.
-b1 : git init.
+b1 : git init. (tạo file git)
 b2 : kiểm tra xem đã kết nối vs remote chưa : git remote.
 b3 : kết nối vs remote : git remote tên_remote add đia_chỉ_remote(root@10.0.212.21):/đường _dẫn_đến_thư_mục_remote. (thường đặt tên remote là origin)
 b4 : xem chi tiết đia chỉ của remote : git remote -v (có thể tạo nhiều tên remote).

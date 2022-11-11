@@ -1,5 +1,32 @@
+pip install virtualenv (cài đặt server nhẹ)
+virtualenv env (tạo file env)
+pip install django (cài gói django)
+django-admin startproject myproject (tạo app)
+cd myproject (di chuyển vào thư mục)
+python manager.py runserver (chạy server)
+
+pip install mysqlclient (cài thư viện mysql)
 pip install pillow (cài thư viện upload ảnh)
+pip install django-ckeditor (caif ckediter)
+
+
+///api///
+pip install djoser (để xử lý các hành động cơ bản như đăng ký, đăng nhập, đăng xuất, đặt lại mật khẩu và kích hoạt tài khoản.)
+pip install django-cors-headers
+pip install djangorestframework (xây dựng các API Web.)
+
 
 python manage.py makemigrations products (tạo file create lệnh sql)
 python .\manage.py sqlmigrate products 0001 (xem lệnh sql)
 python .\manage.py migrate (tạo sql trên locahost)
+
+//vueJs//
+https://vi.vuejs.org/v2/guide/installation.html
+
+
+* (
+Khi thêm trường mới thì nhớ cho nó giá trị bằng null
+Khi khai báo nameClass dưới class đó thì cho thêm dấu '' vào.
+lazi
+
+)

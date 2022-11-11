@@ -37,8 +37,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "products.apps.ProductsConfig"
+
+    "products.apps.ProductsConfig",
+    "ckeditor",
+    "ckeditor_uploader",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "corsheaders",
+    "djoser"
 ]
+
+CORS_ALLOWED_ORIGINS = ["http://127.0.0.1:8000",]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -48,6 +57,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "myproject.urls"
@@ -122,6 +133,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+MEDIA_ROOT = "%s/products/static/" %BASE_DIR
+CKEDITOR_UPLOAD_PATH = "static/upload/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
