@@ -22,6 +22,9 @@ python .\manage.py migrate (tạo sql trên locahost)
 
 //vueJs//
 https://vi.vuejs.org/v2/guide/installation.html
+npm install bulma
+npm install axios
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
 * (
