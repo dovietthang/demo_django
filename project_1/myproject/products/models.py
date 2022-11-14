@@ -17,14 +17,11 @@ class User(AbstractUser):
 
     avatar = models.ImageField(upload_to='upload/%y/%m', default=None)
 
-class Category(models.Model):
+class Category(ItemBase):
     class Meta:
         db_table = 'category'
 
     name = models.CharField(max_length=100, null=False, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    active = models.BooleanField(default=True)
 
 class Product(ItemBase):
     class Meta:
@@ -58,3 +55,4 @@ class Tag(models.Model):
         return self.name
 
     name = models.CharField(max_length=50, unique=True, default=None)
+    active = models.BooleanField(default=True)

@@ -5,22 +5,27 @@ django-admin startproject myproject (tạo app)
 cd myproject (di chuyển vào thư mục)
 python manager.py runserver (chạy server)
 
+
 pip install mysqlclient (cài thư viện mysql)
 pip install pillow (cài thư viện upload ảnh)
 pip install django-ckeditor (caif ckediter)
 
 
-///api///
+// oauth2 //
+pip install django-oauth-toolkit ( cài đặt bộ chứng thực người dùng)
+python manage.py migrate oauth2_provider ()
+
+// api //
 pip install djoser (để xử lý các hành động cơ bản như đăng ký, đăng nhập, đăng xuất, đặt lại mật khẩu và kích hoạt tài khoản.)
 pip install django-cors-headers
 pip install djangorestframework (xây dựng các API Web.)
 
-
+// migrate //
 python manage.py makemigrations products (tạo file create lệnh sql)
 python .\manage.py sqlmigrate products 0001 (xem lệnh sql)
 python .\manage.py migrate (tạo sql trên locahost)
 
-//vueJs//
+// vueJs //
 https://vi.vuejs.org/v2/guide/installation.html
 npm install bulma
 npm install axios
